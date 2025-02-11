@@ -1,5 +1,5 @@
 import React from "react";
-
+import PortfolioSlider from "components/PortfolioSlider/PortfolioSlider";
 import styles from './Projects.module.css'
 
 const Projects = () => {
@@ -10,8 +10,8 @@ const Projects = () => {
                     Projects
                 </h1>
             </div>
-
-            <div>
+            <PortfolioSlider/>
+            <div className={styles.container}>
                 Projects Page
             </div>
         

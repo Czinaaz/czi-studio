@@ -10,7 +10,7 @@ const Contact = () => {
                 <h1 className={styles.headerText}>Contact Pagee</h1>
             </div>
 
-            <div>
+            <div className={styles.container}>
                 Contact Page
             </div>
         

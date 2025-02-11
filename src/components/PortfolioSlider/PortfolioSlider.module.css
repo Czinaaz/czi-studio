@@ -1,0 +1,45 @@
+.portfolioSlider {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.portfolioContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolioImage {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.portfolioImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolioText {
+    flex: 1;
+    padding: 20px;
+}
+
+.portfolioText h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolioText p {
+    font-size: 16px;
+    color: #666;
+}
+
+.slickPrev:before,
+.slickPext:before {
+    color: #000;
+}
+
+.slickDots li button:before {
+    color: #000;
+}
