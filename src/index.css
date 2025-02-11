@@ -1,15 +1,164 @@
 @import-normalize; 
 
+
+html,
 body {
   margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font: inherit; */
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Manrope", sans-serif;
+  /* background-color: var(--neutral-black); */
+  /* color: var(--neutral-white); */
+}
+
+.container {
+  max-width: 1272px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.light-mode {
+  --primary-color: #b77ae9;
+  --neutral-black: #272727;
+  --neutral-light-black: #c7c7c7;
+  --neutral-dark-gray: #ffffff;
+  --neutral-gray: #191919;
+  --neutral-light-gray: #484848;
+  --neutral-white: #b77ae9;
+  --neutral-offwhite: #444444;
+  --error-red: #e74c3c;
+  --success-green: #2ecc71;
+  --header-color: #1f1f1f;
+  --buttonmain:#ffffff;
+  --navlink:#000000;
+  --buttonsocial-light:#b77ae9;
+  --buttonsocial-dark:#8d8d8d;
+  --buttonfill:hsl(276, 7%, 15%);
+  --project-color-one: #b77ae9;
+  --project-color-two:#ffffff;
+  --textarea: #f0f0f0;
+}
+
+
+:root {
+  --header-color: #ffffff;
+  --primary-color: #80ffaa;
+  --neutral-black: #0a0a0a;
+  --neutral-light-black: #1a1a1a;
+  --neutral-dark-gray: #212121;
+  --neutral-gray: #3d3d3d;
+  --neutral-light-gray: #757575;
+  --neutral-white: #ffffff;
+  --neutral-offwhite: #c7c7c7;
+  --error-red: #e74c3c;
+  --success-green: #2ecc71;
+  --buttonmain:#212121;
+  --navlink:#ffffff;
+  --buttonsocial-light:#757575;
+  --buttonsocial-dark:#212121;
+  --buttonfill: var(--primary-color);
+  --project-color-one: #000000;
+  --project-color-two:#ffffff;
+  --textarea: #212121;
+}
+
+*----------------------------------------
+Typography
+----------------------------------------*/
+.heading-one {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 101px;
+  line-height: 0.9;
+}
+.heading-two {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 76px;
+  line-height: 1;
+}
+.heading-three {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.heading-four {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.heading-five {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.body-small {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.text-action {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1; /* 16px or 100% */
+  text-transform: uppercase;
+}
+.text-underline {
+  color: var(--neutral-white);
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.text-underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: var(--primary-color);
+  bottom: 0;
+}
+.color-offwhite {
+  color: var(--neutral-offwhite);
+}
+.color-light-gray {
+  color: var(--neutral-light-gray);
 }
