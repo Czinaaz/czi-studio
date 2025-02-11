@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -13,7 +13,9 @@ const NavBar = () => {
 
     return (
         <header className={styles.header}>
-        <h3 className={styles.logo}>Ivan Rudenko</h3>
+            <Link className={styles.logoSection} >
+                <h3 className={styles.logo}>Ivan Rudenko</h3>
+            </Link>
         <nav ref={navRef} className={styles.nav}>
             <NavLink to="/czi-studio/" className={styles.navLink}>
             Home
@@ -24,9 +26,6 @@ const NavBar = () => {
             <NavLink to="/czi-studio/contact" className={styles.navLink}>
             Contact
             </NavLink>
-            {/* <NavLink to="/czi-studio/" className={styles.navLink}>
-            About me
-            </NavLink> */}
             <button className={`${styles.navBtn} ${styles.navCloseBtn}`} onClick={showNavbar}>
             <FaTimes />
             </button>
