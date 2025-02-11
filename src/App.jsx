@@ -1,12 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import React, { lazy, Suspense } from 'react';
-import Navigation from "components/Header/NavBar";
+import React, { Suspense } from 'react';
 import NavBar from "components/Header/NavBar";
 import Projects from "pages/Projects/Projects";
 import Contact from "pages/Contact/Contact";
 import Home from "pages/Home/Home";
 
-// const Home = lazy(() => import('./pages/Home/Home'));
 
 export const App = () => {
   return (
