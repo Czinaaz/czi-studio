@@ -3,7 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './PortfolioSlider.module.css';
-
+import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 
 import CziCinema from '../../images/portfolioIMG/cinema.png';
 import BookStore from '../../images/portfolioIMG/bookstore.png';
@@ -38,6 +39,18 @@ const PortfolioSlider = () => {
         },
     ];
 
+    const PrevArrow = ({ onClick }) => (
+        <button className={styles.prevArrow} onClick={onClick}>
+            <FaArrowLeft/>
+        </button>
+    );
+    
+    const NextArrow = ({ onClick }) => (
+        <button className={styles.nextArrow} onClick={onClick}>
+            <FaArrowRight/>
+        </button>
+    );
+
     const settings = {
         dots: true,
         infinite: true,
@@ -46,6 +59,8 @@ const PortfolioSlider = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
     };
 
     return (
@@ -65,6 +80,7 @@ const PortfolioSlider = () => {
             </div>
             ))}
         </Slider>
+        
         </div>
     );
 };

@@ -4,6 +4,7 @@ import NavBar from "components/Header/NavBar";
 import Projects from "pages/Projects/Projects";
 import Contact from "pages/Contact/Contact";
 import Home from "pages/Home/Home";
+import Footer from "components/Footer/Footer";
 
 
 export const App = () => {
@@ -17,6 +18,7 @@ export const App = () => {
           <Route path="/czi-studio/contact" element={<Contact />} />
         </Routes>
       </Suspense>
+      <Footer/>
     </>
   );
 };

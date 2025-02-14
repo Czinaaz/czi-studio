@@ -43,3 +43,32 @@
 .slickDots li button:before {
     color: #000;
 }
+
+/* Arrows design */
+.prevArrow,
+.nextArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prevArrow {
+    left: -5%;
+}
+
+.nextArrow {
+    right: -5%;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
